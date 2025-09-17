@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Poetry Garden</title>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts for a whimsical look -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
+    <style>
+        /* A gentle, inviting font for the body text */
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        /* A classic, elegant font for the title */
+        .title-font {
+            font-family: 'Playfair Display', serif;
+        }
+
+        /* Set a beautiful cottagecore background image */
+        .cottagecore-bg {
+            background-image: url('https://images.unsplash.com/photo-1549414313-5a02479e0809?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+        }
+
+        /* Simple fade-in animation for a soft entry */
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        .animate-fadeIn {
+            animation: fadeIn 1.5s ease-out forwards;
+        }
+
+        /* Glassmorphism effect for the content card */
+        .glass-card {
+            backdrop-filter: blur(10px);
+            background-color: rgba(255, 255, 255, 0.4);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+    </style>
+</head>
+<body class="cottagecore-bg min-h-screen p-4 flex flex-col items-center">
+
+    <!-- Header with a link back to the homepage -->
+    <header class="w-full max-w-4xl mx-auto p-4 mb-8 text-center animate-fadeIn">
+        <a href="index.html" class="inline-block glass-card py-2 px-6 rounded-full text-gray-800 hover:text-gray-900 transition duration-300">
+            ← Back to the Cottage
+        </a>
+    </header>
+
+    <!-- Main content container for poem cards -->
+    <main class="w-full max-w-4xl mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 p-4 animate-fadeIn">
+        
+        <!-- Poem Card 1 -->
+        <div class="glass-card p-6 rounded-2xl shadow-lg flex flex-col items-start text-gray-800">
+            <h2 class="title-font text-2xl font-bold mb-2">Whispers of Fern</h2>
+            <p class="text-sm italic mb-4">A poem about finding peace in the forest's quiet corners.</p>
+            <p class="text-base text-left flex-grow">
+                In shades of green, the old world sleeps, <br>
+                Where sunlight dapples, secrets keeps. <br>
+                A fragile whisper, soft and low, <br>
+                In places where the wild things grow.
+            </p>
+            <a href="#" class="mt-4 bg-gray-700 hover:bg-gray-800 text-white font-semibold py-2 px-6 rounded-full transition duration-300 transform hover:scale-105">
+                Read Poem
+            </a>
+        </div>
+
+        <!-- Poem Card 2 -->
+        <div class="glass-card p-6 rounded-2xl shadow-lg flex flex-col items-start text-gray-800">
+            <h2 class="title-font text-2xl font-bold mb-2">The Beekeeper's Tale</h2>
+            <p class="text-sm italic mb-4">A story of honey, hives, and summer days.</p>
+            <p class="text-base text-left flex-grow">
+                The golden sun, a patient light, <br>
+                Draws nectar from the morning's flight. <br>
+                Through clover fields, a buzzing hum, <br>
+                A sweet reward for work to come.
+            </p>
+            <a href="#" class="mt-4 bg-gray-700 hover:bg-gray-800 text-white font-semibold py-2 px-6 rounded-full transition duration-300 transform hover:scale-105">
+                Read Poem
+            </a>
+        </div>
+
+        <!-- Poem Card 3 -->
+        <div class="glass-card p-6 rounded-2xl shadow-lg flex flex-col items-start text-gray-800">
+            <h2 class="title-font text-2xl font-bold mb-2">Garden's End</h2>
+            <p class="text-sm italic mb-4">A reflective poem on the passing of seasons.</p>
+            <p class="text-base text-left flex-grow">
+                The crimson leaves begin to fall, <br>
+                An amber hue across the wall. <br>
+                The gentle wind, a final sigh, <br>
+                As summer's vibrant moments die.
+            </p>
+            <a href="#" class="mt-4 bg-gray-700 hover:bg-gray-800 text-white font-semibold py-2 px-6 rounded-full transition duration-300 transform hover:scale-105">
+                Read Poem
+            </a>
+        </div>
+
+    </main>
+
+</body>
+</html>
